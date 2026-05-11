@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas</title>
+</head>
+<style>
+    body{
+        text-align: center;
+
+    }
+</style>
+<body>
+    <h1>Imagem Responsiva</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure aliquid laboriosam est culpa laudantium non commodi pariatur vero, ad quo, ullam earum reiciendis? Voluptatibus veniam expedita excepturi in corporis?</p>
+    <picture>
+        <source media="(min-width: 650px )" srcset="imagens/foto-p.jpg" type="image/jpg">
+        <source media="(min-width: 1310px)" srcset="imagens/foto-m.jpg" type="image/jpg">
+        <img src="imagens/foto-g.jpg" alt="Imagem Responsiva">
+    </picture>
+</body>
+</html>
