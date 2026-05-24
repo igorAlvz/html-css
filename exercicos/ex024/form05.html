@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post">
+      <p>
+        <label for="icolor">Cor</label>
+        <input type="color" name="color" id="icolor" value="#f00" />
+      </p>
+      <p>
+        <label for="sats">Nível de satisfação</label>
+        <input type="range" name="sats" id="isats" value="10" />
+      </p>
+      <p>
+        <label for="img">Arquivo</label>
+        <input type="file" name="img" id="img" />
+      </p>
+    </form>
+  </body>
+</html>
