@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Personalizar conta</h1>
+
+    <form action="personalizar.php" method="post" enctype="multipart/form-data">
+
+        <p>
+            <label for="icor">Cor de fundo do perfil:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="iimg">Foto perfil</label>
+            <input type="file" name="img" id="iimg" accept="image/*">
+        </p>
+
+        <p>
+            <label for="ilink">Perfil Linkedin</label>
+            <input type="url" name="link" id="ilink" placeholder="https://www.linkedin.com/in/seu-perfil">
+        </p>
+
+        <p>
+            <input type="submit" value="Salvar alterações">
+        </p>
+    </form>
+    
+</body>
+</html>

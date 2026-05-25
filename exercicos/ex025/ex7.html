@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Busca</title>
+</head>
+<body>
+    <h1>Filtro de Busca</h1>
+    <form action="busca.php" method="get">
+
+        <p>
+            <label for="iprod">Produto:</label>
+            <input type="search" name="prod" id="iprod" placeholder="ex: Iphone 17">
+        </p>
+
+        <p>
+            <label for="ipreco">Faixa de preço</label>
+            <input type="range" name="preco" id="ipreco" min="30" max="1000" step="5" value="30" oninput="valorPreco.value = this.value">
+            <span>R$ <output id="valorPreco">30</output></span>
+        </p>
+
+        <p>
+            <label for="iqtd">Quantidade</label>
+            <input type="number" name="qtd" id="iqtd" min="1" max="30">
+
+        </p>
+
+        <p>
+            <input type="submit" value="Filtrar">
+        </p>
+    </form>
+</body>
+</html>

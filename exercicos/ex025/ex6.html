@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+</head>
+<body>
+    <h1>Agendamento</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Informações para agendamento</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo do paciente" required>
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="ihor">Horário:</label>
+                <input type="time" name="hor" id="ihor" required>
+            </p>
+            <p>
+                <input type="submit" value="Agendar">
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
